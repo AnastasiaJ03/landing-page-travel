@@ -1,0 +1,18 @@
+@use "./variables" as v;
+
+.header {
+    padding-block-start: 4.5rem;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            color: v.$white;
+            font-weight: 800;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 1.6rem;
+            margin-block-end: 3rem;
+        }
+    }
+}

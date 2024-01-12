@@ -1,0 +1,33 @@
+@use "./variables" as v;
+
+.hero {
+    font-size: 1.6rem;
+    color: v.$white;
+    &__text {
+        max-width: 590px;
+        h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-block-end: 1rem;
+        }
+        p {
+            font-size: 1.8rem;
+            margin-block-end: 3rem;
+        }
+    }
+    &__btn {
+        background-color: v.$white;
+        padding: 1rem 2.9rem;
+        color: v.$black;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-block-end: 7rem;
+        transition: all 0.4s ease-in-out;
+        transform-origin: left;
+        &:hover {
+            transform: scaleX(1.2);
+        }
+    }
+}
